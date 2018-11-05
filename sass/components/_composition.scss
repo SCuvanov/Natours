@@ -3,7 +3,7 @@
     position: relative;
 
     &__photo {
-        width: 65%;
+        width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
@@ -16,7 +16,7 @@
         }
 
         &--p2 {
-            left: 30rem;
+            left: 25rem;
             top: 2rem;
         }
 
@@ -29,7 +29,7 @@
             outline: 1.5rem solid $color-primary;
 
             z-index: 1;
-            transform: scale(1.05);
+            transform: scale(1.05) translateY(-5px);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
         }
     }

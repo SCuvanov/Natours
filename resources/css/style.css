@@ -169,7 +169,7 @@ body {
 .composition {
   position: relative; }
   .composition__photo {
-    width: 65%;
+    width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
@@ -179,7 +179,7 @@ body {
       left: 0;
       top: -2rem; }
     .composition__photo--p2 {
-      left: 30rem;
+      left: 25rem;
       top: 2rem; }
     .composition__photo--p3 {
       left: 10rem;
@@ -187,7 +187,7 @@ body {
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       z-index: 1;
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-5px);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
@@ -241,5 +241,5 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 30rem 0;
+  padding: 30rem 5rem;
   margin-top: -25vh; }
