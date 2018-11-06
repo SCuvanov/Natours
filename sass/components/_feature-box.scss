@@ -1,6 +1,12 @@
 .feature-box {
 
-    &__icon {}
+    background-color: rgba($color-white, $alpha: .75);
+    padding: 5rem 3rem;
+    border-radius: 2%;
+
+    &__icon {
+        color: $color-primary;
+    }
 
     &__text {}
 

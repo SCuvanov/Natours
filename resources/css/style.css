@@ -85,7 +85,8 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 1rem 0; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -192,6 +193,13 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5rem 3rem;
+  border-radius: 2%; }
+  .feature-box__icon {
+    color: #55c57a; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
@@ -242,4 +250,10 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 30rem 5rem;
+  margin-top: -25vh; }
+
+.section-features {
+  padding: 30rem 5rem;
+  background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
   margin-top: -25vh; }

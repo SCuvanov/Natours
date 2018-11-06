@@ -3,3 +3,10 @@
     padding: 30rem 5rem;
     margin-top: -25vh;
 }
+
+.section-features {
+    padding: 30rem 5rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); 
+    margin-top: -25vh;
+}
