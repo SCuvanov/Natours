@@ -85,8 +85,7 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase;
-  padding: 1rem 0; }
+  text-transform: uppercase; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -95,6 +94,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-xsmall {
+  margin-bottom: .5rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -194,11 +196,17 @@ body {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 5rem 3rem;
-  border-radius: 2%; }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3rem 3rem;
+  border-radius: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .feature-box__icon {
-    color: #55c57a; }
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #1ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .header {
   height: 95vh;
@@ -253,7 +261,8 @@ body {
   margin-top: -25vh; }
 
 .section-features {
-  padding: 30rem 5rem;
-  background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  margin-top: -25vh; }
+  margin-top: -26vh; }
