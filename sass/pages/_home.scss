@@ -2,12 +2,14 @@
     background-color: $color-grey-light-1;
     padding: 30rem 5rem;
     margin-top: -25vh;
+    margin-bottom: 15vh;
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 30rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
     background-size: cover;
-    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); 
-    margin-top: -26vh;
+    background-position: center;
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    margin-top: -35vh;
 }
