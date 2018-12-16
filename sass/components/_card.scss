@@ -14,7 +14,8 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
-        border-radius: 2%;
+        border-radius: 1rem;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 
         &--front {
@@ -40,10 +41,34 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg) scale(1.03);
+        transform: rotateY(-180deg) scale(1.03);
     }
 
     &:hover &__side--back {
         transform: rotateY(0) scale(1.03);
     }
+
+    &__picture {
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)), url('../../resources/img/nat-5.jpg');
+        }
+
+        &--2 {
+            background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../../resources/img/nat-4.jpg');
+        }
+
+        &--3 {
+            background-image: linear-gradient(to bottom right, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)), url('../../resources/img/nat-3.jpg');
+        }
+
+    }
+
+    &__heading {}
+
+    &__details {}
 }
