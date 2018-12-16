@@ -1,13 +1,11 @@
 .card {
-    height: 50rem;
+    height: 52rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
 
     &__side {
-        color: white;
-
-        height: 50rem;
+        height: 52rem;
         width: 100%;
         transition: all .8s ease;
         position: absolute;
@@ -52,7 +50,9 @@
         height: 23rem;
         background-size: cover;
         background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)), url('../../resources/img/nat-5.jpg');
@@ -68,7 +68,60 @@
 
     }
 
-    &__heading {}
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 11rem;
+        right: 2rem;
+        width: 75%;
 
-    &__details {}
+    }
+
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8));
+        }
+    }
+
+    &__details {
+
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: 1rem;
+                text-transform: capitalize;
+
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+
+            }
+        }
+    }
 }
