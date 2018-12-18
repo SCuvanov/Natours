@@ -1,4 +1,5 @@
 .btn {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
 
     &:link,
     &:visited {
@@ -8,7 +9,7 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        transition: all .2s;
+        transition: all .25s;
         position: relative;
     }
 

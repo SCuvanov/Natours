@@ -107,48 +107,45 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
-.btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 160%;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
-
-.btn:active {
-  transform: translateY(-0.1rem);
+.btn {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn--white {
-  background-color: #FFF;
-  color: #777; }
-  .btn--white::after {
-    background-color: #FFF; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .5s; }
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .5s;
-  animation-fill-mode: backwards; }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 160%;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .25s;
+    position: relative; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #FFF;
+    color: #777; }
+    .btn--white::after {
+      background-color: #FFF; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s; }
+  .btn--animated {
+    animation: moveInBottom .5s ease-out .5s;
+    animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
   color: #55c57a;
@@ -245,6 +242,23 @@ body {
         text-transform: capitalize; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+  .card__price-box {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
