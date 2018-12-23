@@ -2,7 +2,7 @@
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
-    background-color: $color-white;
+    background-color: rgba($color-white, $alpha: .60);
     border-radius: 0.5rem;
     padding: 6rem;
     padding-left: 9rem;
@@ -13,20 +13,46 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        background-color: orangered;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+        position: relative;
     }
 
     &__img {
         height: 100%;
-        transform: translateX(-3rem);
+        transform: translateX(-3rem) scale(1.3);
+        transition: ease-in .2s;
+        backface-visibility: hidden;
     }
 
     &__text {
         transform: skewX(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: ease-in .2s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-3rem) scale(1);
+        filter: blur(3px) brightness(75%);
     }
 }
