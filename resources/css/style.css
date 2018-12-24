@@ -451,9 +451,24 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 33rem 0 15rem 0;
+  padding: 33rem 0 45rem 0;
   margin-top: -20vh; }
 
 .section-stories {
+  padding: 45rem 0;
+  position: relative;
+  background-color: #FFF;
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  margin-top: -33vh; }
+
+.section-book {
   padding: 15rem 0;
-  position: relative; }
+  background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+
+.book {
+  background-image: url("/resources/img/nat-10.jpg");
+  background-size: cover;
+  height: 50rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }

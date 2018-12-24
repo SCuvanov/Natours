@@ -17,11 +17,28 @@
 
 .section-tours {
     background-color: $color-grey-light-1;
-    padding: 33rem 0 15rem 0;
+    padding: 33rem 0 45rem 0;
     margin-top: -20vh;
 }
 
 .section-stories {
-    padding: 15rem 0;
+    padding: 45rem 0;
     position: relative;
+    background-color: $color-white;
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    margin-top: -33vh;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+}
+
+.book {
+    background-image: url('/resources/img/nat-10.jpg');
+    background-size: cover;
+    height: 50rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 }
