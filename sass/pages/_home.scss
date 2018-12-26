@@ -1,38 +1,42 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 30rem 5rem;
-    margin-top: -27vh;
-    margin-bottom: 13vh;
+    //margin-top: -27vh;
+    //margin-bottom: 13vh;
+    margin-top: -35rem;
+    margin-bottom: 30rem;
 }
 
 .section-features {
-    padding: 30rem 0;
+    padding: 40rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-    margin-top: -35vh;
+    //margin-top: -35vh;
+    margin-top: -55rem;
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
-    padding: 33rem 0 45rem 0;
-    margin-top: -20vh;
+    padding: 33rem 0 20rem 0;
+    //margin-top: -20vh;
+    margin-top: -25rem;
 }
 
 .section-stories {
-    padding: 45rem 0;
+    padding: 20rem 0 45rem 0;
     position: relative;
-    background-color: $color-white;
-    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-    margin-top: -33vh;
 }
 
 .section-book {
-    padding: 15rem 0;
+    padding: 35rem 0 15rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+    background-color: $color-white;
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -40rem;
 }
 
 .book {
