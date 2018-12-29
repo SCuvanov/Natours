@@ -11,6 +11,8 @@ body {
     text-transform: uppercase;
     color: $color-white;
 
+    -webkit-backface-visibility: hidden;
+
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
@@ -20,6 +22,8 @@ body {
         font-weight: 400;
         letter-spacing: 3.5rem;
 
+        -webkit-animation: moveInLeft 1s ease-out .2s;
+
         animation: moveInLeft 1s ease-out .2s;
     }
 
@@ -28,7 +32,11 @@ body {
         font-size: 100%;
         font-weight: 700;
         letter-spacing: 2rem;
+        -webkit-transform: translate(-1%, 0%);
+        -ms-transform: translate(-1%, 0%);
         transform: translate(-1%, 0%);
+
+        -webkit-animation: moveInRight 1s ease-out .2s;
 
         animation: moveInRight 1s ease-out .2s;
     }
@@ -39,13 +47,20 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline;
+    background-image: -webkit-gradient(linear, left top, right top, from($color-primary-light), to($color-primary-dark));
+    background-image: -webkit-linear-gradient(left, $color-primary-light, $color-primary-dark);
+    background-image: -o-linear-gradient(left, $color-primary-light, $color-primary-dark);
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
 
     &:hover {
+        -webkit-transform: skewY(20deg);
+        -ms-transform: skewY(20deg);
         transform: skewY(20deg);
         text-shadow: .5rem .5rem 2rem rgba($color-black, .2);
     }

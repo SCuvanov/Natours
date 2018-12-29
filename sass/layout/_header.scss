@@ -1,5 +1,8 @@
 .header {
     height: 95vh;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/hero.jpg');
+    background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+    background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
     background-size: cover;
     background-position: top;
@@ -22,6 +25,8 @@
         position: absolute;
         top: 40%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
     }

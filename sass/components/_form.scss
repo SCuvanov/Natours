@@ -15,10 +15,13 @@
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
 
         &:focus {
             outline: none;
+            -webkit-box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .15);
             box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .15);
             border-bottom: 3px solid $color-primary;
 
@@ -38,12 +41,16 @@
         margin-left: 2rem;
         margin-top: .7rem;
         display: block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
     }
 
     &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
+        -webkit-transform: translateY(-4rem);
+        -ms-transform: translateY(-4rem);
         transform: translateY(-4rem);
     }
 
@@ -79,6 +86,8 @@
             border-radius: 50%;
             background-color: $color-primary;
             opacity: 0;
+            -webkit-transition: opacity .2s;
+            -o-transition: opacity .2s;
             transition: opacity .2s;
         }
     }

@@ -9,6 +9,9 @@
 
 .section-features {
     padding: 40rem 0;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/nat-4.jpg');
+    background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
+    background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
     background-size: cover;
     background-position: center;
@@ -32,6 +35,9 @@
 
 .section-book {
     padding: 35rem 0 15rem 0;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8)));
+    background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+    background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
     background-color: $color-white;
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
@@ -40,6 +46,14 @@
 }
 
 .book {
+    background-image: -webkit-linear-gradient(345deg,
+        rgba($color-white, .75) 0%,
+        rgba($color-white, .75) 50%,
+        transparent 50%), url('../../resources/img/nat-10.jpg');
+    background-image: -o-linear-gradient(345deg,
+        rgba($color-white, .75) 0%,
+        rgba($color-white, .75) 50%,
+        transparent 50%), url('../../resources/img/nat-10.jpg');
     background-image: linear-gradient(105deg,
         rgba($color-white, .75) 0%,
         rgba($color-white, .75) 50%,
@@ -47,6 +61,7 @@
     background-size: cover;
     height: 50rem;
     border-radius: 0.5rem;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 
     &__form {

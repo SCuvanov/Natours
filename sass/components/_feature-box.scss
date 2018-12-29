@@ -4,17 +4,28 @@
     border-radius: 0.5rem;
     font-size: 1.5rem;
     text-align: center;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
     transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
 
     &:hover {
+        -webkit-transform: translateY(-1rem) scale(1.03);
+        -ms-transform: translateY(-1rem) scale(1.03);
         transform: translateY(-1rem) scale(1.03);
+        -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
         box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
     }
 
     &__icon {
         font-size: 6rem;
         margin-bottom: 2.5rem;
+        background-image: -webkit-gradient(linear, left top, right top, from($color-primary-light), to($color-primary-dark));
+        background-image: -webkit-linear-gradient(left, $color-primary-light, $color-primary-dark);
+        background-image: -o-linear-gradient(left, $color-primary-light, $color-primary-dark);
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
