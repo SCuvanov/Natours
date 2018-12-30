@@ -14,3 +14,38 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+//Media Query Manager
+@mixin respond($breakpoint) {
+    @if $breakpoint==$breakpoint-phone {
+        @media (max-width: $breakpoint-phone) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet-portrait {
+        @media (max-width: $breakpoint-tablet-portrait) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet-landscape {
+        @media (max-width: $breakpoint-tablet-landscape) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $breakpoint==$breakpoint-desktop {
+        @media (min-width: $breakpoint-desktop) {
+            @content
+        }
+
+        ;
+    }
+}

@@ -17,7 +17,7 @@ $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 $color-black: #000;
 
-// FONT SIZES
+//FONT SIZES
 
 $default-font-size: 1.6rem;
 
@@ -25,3 +25,9 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+//MEDIA QUERY BREAKPOINTS
+$breakpoint-phone: 37.5em; //600px
+$breakpoint-tablet-portrait: 56.25em; //900px
+$breakpoint-tablet-landscape: 75em; //1200px
+$breakpoint-desktop: 112.5em; //1800px

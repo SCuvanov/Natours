@@ -9,10 +9,23 @@
 html {
   /* 16px default - defines 1rem*/
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @-webkit-keyframes moveInLeft {
   0% {
@@ -91,10 +104,8 @@ body {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   text-transform: uppercase;
@@ -109,6 +120,10 @@ body {
     letter-spacing: 3.5rem;
     -webkit-animation: moveInLeft 1s ease-out .2s;
     animation: moveInLeft 1s ease-out .2s; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 275%; } }
   .heading-primary--sub {
     display: block;
     font-size: 100%;
@@ -119,6 +134,10 @@ body {
     transform: translate(-1%, 0%);
     -webkit-animation: moveInRight 1s ease-out .2s;
     animation: moveInRight 1s ease-out .2s; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.75rem;
+        font-size: 75%; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -135,6 +154,12 @@ body {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     -webkit-transform: skewY(20deg);
     -ms-transform: skewY(20deg);
