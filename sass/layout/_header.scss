@@ -10,6 +10,14 @@
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
     position: relative;
 
+    @include respond($breakpoint-tablet-portrait) {
+        height: 75vh;
+    }
+
+    @include respond($breakpoint-phone) {
+        height: 50vh;
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;

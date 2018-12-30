@@ -1,20 +1,41 @@
 .row {
+    @include clearfix;
+
     max-width: $grid-width;
     margin: 0 auto;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond($breakpoint-tablet-portrait) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
 
-    @include clearfix;
+    @include respond($breakpoint-tablet-portrait) {
+        max-width: 75%;
+    }
+
+
 
     [class^="col-"] {
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond($breakpoint-tablet-portrait) {
+                margin-right: 0 !important;
+                margin-bottom: $gutter-vertical-small !important;
+            }
+
+        }
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 100% !important;
         }
     }
+
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);

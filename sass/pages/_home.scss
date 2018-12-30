@@ -1,10 +1,17 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 35rem 5rem;
-    //margin-top: -27vh;
-    //margin-bottom: 13vh;
     margin-top: -40rem;
     margin-bottom: 30rem;
+
+    @include respond($breakpoint-tablet-landscape) {}
+
+    @include respond($breakpoint-tablet-portrait) {}
+
+    @include respond($breakpoint-phone) {
+        padding: 45rem 5rem;
+        margin-top: -45rem;
+    }
 }
 
 .section-features {
@@ -19,6 +26,29 @@
     clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
     //margin-top: -35vh;
     margin-top: -60rem;
+
+    @include respond($breakpoint-tablet-landscape) {
+        -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        margin-top: -65rem;
+
+        padding: 30rem 0;
+    }
+
+    @include respond($breakpoint-tablet-portrait) {
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        margin-top: -50rem;
+        padding: 25rem 0;
+    }
+
+    @include respond($breakpoint-phone) {
+        -webkit-clip-path: polygon(0 7.5%, 100% 0, 100% 93.5%, 0 100%);
+        clip-path: polygon(0 7.5%, 100% 0, 100% 93.5%, 0 100%);
+        margin-top: -40rem;
+        padding: 20rem 0;
+    }
+
 }
 
 .section-tours {
@@ -26,11 +56,27 @@
     padding: 35rem 0 20rem 0;
     //margin-top: -20vh;
     margin-top: -30rem;
+
+    @include respond($breakpoint-tablet-landscape) {}
+
+    @include respond($breakpoint-tablet-portrait) {}
+
+    @include respond($breakpoint-phone) {
+        padding: 35rem 0 12.5rem 0;
+    }
 }
 
 .section-stories {
     padding: 20rem 0 45rem 0;
     position: relative;
+
+    @include respond($breakpoint-tablet-landscape) {}
+
+    @include respond($breakpoint-tablet-portrait) {}
+
+    @include respond($breakpoint-phone) {
+        padding: 10rem 0 45rem 0
+    }
 }
 
 .section-book {
@@ -40,9 +86,25 @@
     background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
     background-color: $color-white;
-    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     margin-top: -40rem;
+
+    @include respond($breakpoint-tablet-landscape) {
+        -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @include respond($breakpoint-tablet-portrait) {
+        -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @include respond($breakpoint-phone) {
+        -webkit-clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0 100%);
+        padding: 20rem 0 12.5rem 0;
+    }
 }
 
 .book {
