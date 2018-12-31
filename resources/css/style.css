@@ -945,7 +945,7 @@ body {
       height: 75vh; } }
   @media (max-width: 37.5em) {
     .header {
-      height: 50vh; } }
+      height: 55vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -954,10 +954,19 @@ body {
       .header__logo-box {
         position: relative;
         display: block;
-        width: 75%; } }
+        text-align: center;
+        top: 0;
+        left: 0;
+        padding: 10rem 5rem 0rem 5rem; } }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        padding: 5rem 5rem 0rem 5rem; } }
   .header__logo {
     height: 3.5rem;
     width: auto; }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        height: 5rem; } }
   .header__heading-box {
     position: absolute;
     top: 40%;
@@ -968,7 +977,17 @@ body {
     text-align: center; }
     @media (max-width: 56.25em) {
       .header__heading-box {
-        position: relative; } }
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0);
+        padding: 7.5rem 5rem 0 5rem; } }
+    @media (max-width: 37.5em) {
+      .header__heading-box {
+        padding: 3.5rem 0; } }
 
 .row {
   max-width: 114rem;
@@ -1156,7 +1175,7 @@ body {
       padding: 35rem 5rem 40rem 5rem; } }
   @media (max-width: 37.5em) {
     .section-about {
-      padding: 45rem 5rem 35rem 5rem;
+      padding: 45rem 5rem 37.5rem 5rem;
       margin-top: -45rem; } }
 
 .section-features {
@@ -1186,8 +1205,8 @@ body {
     .section-features {
       -webkit-clip-path: polygon(0 7.5%, 100% 0, 100% 93.5%, 0 100%);
       clip-path: polygon(0 7.5%, 100% 0, 100% 93.5%, 0 100%);
-      margin-top: -40rem;
-      padding: 20rem 0; } }
+      margin-top: -42.5rem;
+      padding: 17.5rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -1200,9 +1219,12 @@ body {
 .section-stories {
   padding: 20rem 0 45rem 0;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 12.5rem 0 42.5rem 0; } }
   @media (max-width: 37.5em) {
     .section-stories {
-      padding: 10rem 0 45rem 0; } }
+      padding: 7.5rem 0 42.5rem 0; } }
 
 .section-book {
   padding: 35rem 0 15rem 0;
@@ -1217,7 +1239,8 @@ body {
   @media (max-width: 75em) {
     .section-book {
       -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); } }
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+      padding: 35rem 5rem 15rem 5rem; } }
   @media (max-width: 56.25em) {
     .section-book {
       -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
@@ -1226,7 +1249,7 @@ body {
     .section-book {
       -webkit-clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0 100%);
-      padding: 20rem 0 12.5rem 0; } }
+      padding: 15rem 0 7.5rem 0; } }
 
 .book {
   background-image: -webkit-linear-gradient(345deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 50%, transparent 50%), url("../../resources/img/nat-10.jpg");

@@ -15,7 +15,7 @@
     }
 
     @include respond($breakpoint-phone) {
-        height: 50vh;
+        height: 55vh;
     }
 
     &__logo-box {
@@ -26,13 +26,24 @@
         @include respond($breakpoint-tablet-portrait) {
             position: relative;
             display: block;
-            width: 75%;
+            text-align: center;
+            top: 0;
+            left: 0;
+            padding: 10rem 5rem 0rem 5rem;
+        }
+
+        @include respond($breakpoint-phone) {
+            padding: 5rem 5rem 0rem 5rem;
         }
     }
 
     &__logo {
         height: 3.5rem;
         width: auto;
+
+        @include respond($breakpoint-tablet-portrait) {
+            height: 5rem;
+        }
     }
 
     &__heading-box {
@@ -46,6 +57,19 @@
 
         @include respond($breakpoint-tablet-portrait) {
             position: relative;
+            display: block;
+            top: 0;
+            left: 0;
+
+            -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+            transform: translate(0);
+            
+            padding: 7.5rem 5rem 0 5rem;
+        }
+
+        @include respond($breakpoint-phone) {
+            padding: 3.5rem 0;
         }
     }
 }
