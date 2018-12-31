@@ -187,9 +187,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-large {
   margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-large {
+      margin-bottom: 6rem !important; } }
 
 .u-margin-top-xsmall {
   margin-top: .5rem !important; }
@@ -441,6 +447,51 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        position: relative;
+        width: 100%; }
+        .card__side--front {
+          border-radius: .5rem .5rem 0 0;
+          padding-bottom: 6rem; }
+        .card__side--back {
+          -webkit-transform: rotateY(0) scale(1);
+          transform: rotateY(0) scale(1);
+          border-radius: 0 0 .5rem .5rem;
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          margin-top: -7rem; }
+      .card:hover .card__side--front {
+        -webkit-transform: rotateY(0) scale(1);
+        transform: rotateY(0) scale(1); }
+      .card:hover .card__side--back {
+        -webkit-transform: rotateY(0) scale(1);
+        transform: rotateY(0) scale(1); }
+      .card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 18rem;
+        margin-bottom: -5rem; }
+      .card__price-box {
+        color: #FFF;
+        text-align: center;
+        margin-bottom: 1.5rem; }
+      .card__price-only {
+        font-size: 2rem;
+        text-transform: uppercase; }
+      .card__price-value {
+        font-size: 6rem;
+        font-weight: 100; } }
 
 .composition {
   position: relative; }
@@ -454,15 +505,40 @@ body {
     -o-transition: all .2s;
     transition: all .2s;
     outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        width: 35%; } }
+    @media (max-width: 37.5em) {
+      .composition__photo {
+        width: 55%; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
     .composition__photo--p2 {
       left: 25rem;
       top: 2rem; }
+      @media (max-width: 75em) {
+        .composition__photo--p2 {
+          left: 18rem; } }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: -2rem;
+          left: 30rem; } }
+      @media (max-width: 37.5em) {
+        .composition__photo--p2 {
+          top: 1rem;
+          left: 12rem; } }
     .composition__photo--p3 {
       left: 10rem;
       top: 12rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 1.5rem;
+          left: 15rem; } }
+      @media (max-width: 37.5em) {
+        .composition__photo--p3 {
+          top: 7rem;
+          left: 5rem; } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       z-index: 1;
@@ -489,6 +565,9 @@ body {
   -o-transition: transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box:hover {
     -webkit-transform: translateY(-1rem) scale(1.03);
     -ms-transform: translateY(-1rem) scale(1.03);
@@ -504,6 +583,9 @@ body {
     background-image: linear-gradient(to right, #1ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box__text {
     margin-top: 2rem; }
 
@@ -749,16 +831,28 @@ body {
   font-size: 1.5rem;
   position: relative;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
+  @media (max-width: 56.25em) {
+    .footer__navigation-box {
+      text-align: center; } }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 1rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        text-align: center; } }
   .footer__list {
     list-style: none;
     float: left; }
@@ -784,6 +878,11 @@ body {
     display: inline-block;
     width: 86%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        text-align: center;
+        float: none; } }
 
 .header {
   height: 95vh;
@@ -832,7 +931,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 75%; } }
+      max-width: 85%;
+      padding: 0 3rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -870,6 +970,14 @@ body {
     z-index: 2000;
     text-align: center;
     cursor: pointer; }
+    @media (max-width: 56.25em) {
+      .navigation__button {
+        top: 4rem;
+        right: 4rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__button {
+        top: 3rem;
+        right: 3rem; } }
   .navigation__background {
     height: 6rem;
     width: 6rem;
@@ -888,6 +996,14 @@ body {
     -o-transition: transform 0.65s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform 0.65s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform 0.65s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.65s cubic-bezier(0.86, 0, 0.07, 1); }
+    @media (max-width: 56.25em) {
+      .navigation__background {
+        top: 4.5rem;
+        right: 4.5rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__background {
+        top: 3.5rem;
+        right: 3.5rem; } }
   .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -982,9 +1098,12 @@ body {
   padding: 35rem 5rem;
   margin-top: -40rem;
   margin-bottom: 30rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 35rem 5rem 40rem 5rem; } }
   @media (max-width: 37.5em) {
     .section-about {
-      padding: 45rem 5rem;
+      padding: 45rem 5rem 35rem 5rem;
       margin-top: -45rem; } }
 
 .section-features {

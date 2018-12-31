@@ -12,6 +12,16 @@
         z-index: 2000;
         text-align: center;
         cursor: pointer;
+
+        @include respond($breakpoint-tablet-portrait) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond($breakpoint-phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -37,6 +47,16 @@
         transition: transform .65s cubic-bezier(0.86, 0, 0.07, 1);
 
         transition: transform .65s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform .65s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond($breakpoint-tablet-portrait) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond($breakpoint-phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {

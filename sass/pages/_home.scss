@@ -6,10 +6,12 @@
 
     @include respond($breakpoint-tablet-landscape) {}
 
-    @include respond($breakpoint-tablet-portrait) {}
+    @include respond($breakpoint-tablet-portrait) {
+        padding: 35rem 5rem 40rem 5rem;
+    }
 
     @include respond($breakpoint-phone) {
-        padding: 45rem 5rem;
+        padding: 45rem 5rem 35rem 5rem;
         margin-top: -45rem;
     }
 }

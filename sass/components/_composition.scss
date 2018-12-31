@@ -13,6 +13,16 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include respond($breakpoint-tablet-landscape) {}
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 35%;
+        }
+
+        @include respond($breakpoint-phone) {
+            width: 55%;
+        }
+
         &--p1 {
             left: 0;
             top: -2rem;
@@ -21,11 +31,37 @@
         &--p2 {
             left: 25rem;
             top: 2rem;
+
+            @include respond($breakpoint-tablet-landscape) {
+                left: 18rem;
+            }
+
+            @include respond($breakpoint-tablet-portrait) {
+                top: -2rem;
+                left: 30rem;
+            }
+
+            @include respond($breakpoint-phone) {
+                top: 1rem;
+                left: 12rem;
+            }
         }
 
         &--p3 {
             left: 10rem;
             top: 12rem;
+
+            @include respond($breakpoint-tablet-landscape) {}
+
+            @include respond($breakpoint-tablet-portrait) {
+                top: 1.5rem;
+                left: 15rem;
+            }
+
+            @include respond($breakpoint-phone) {
+                top: 7rem;
+                left: 5rem;
+            }
         }
 
         &:hover {

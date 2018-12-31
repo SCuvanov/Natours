@@ -13,7 +13,8 @@
     }
 
     @include respond($breakpoint-tablet-portrait) {
-        max-width: 75%;
+        max-width: 85%;
+        padding: 0 3rem;
     }
 
 

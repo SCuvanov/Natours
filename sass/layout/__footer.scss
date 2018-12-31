@@ -5,9 +5,17 @@
     position: relative;
     color: $color-grey-light-1;
 
+    @include respond($breakpoint-tablet-portrait) {
+        padding: 8rem 0;
+    }
+
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond($breakpoint-tablet-portrait) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -15,10 +23,20 @@
         height: auto;
     }
 
+    &__navigation-box {
+        @include respond($breakpoint-tablet-portrait) {
+            text-align: center;
+        }
+    }
+
     &__navigation {
         border-top: 1px solid $color-grey-dark;
         padding-top: 1rem;
         display: inline-block;
+
+        @include respond($breakpoint-tablet-portrait) {
+            text-align: center;
+        }
     }
 
     &__list {
@@ -61,6 +79,12 @@
         display: inline-block;
         width: 86%;
         float: right;
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
     }
 
 }

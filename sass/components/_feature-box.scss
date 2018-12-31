@@ -12,6 +12,11 @@
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s;
 
+
+    @include respond($breakpoint-tablet-portrait) {
+        padding: 2rem;
+    }
+
     &:hover {
         -webkit-transform: translateY(-1rem) scale(1.03);
         -ms-transform: translateY(-1rem) scale(1.03);
@@ -29,6 +34,10 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond($breakpoint-tablet-portrait) {
+            margin-bottom: 0;
+        }
     }
 
     &__text {
