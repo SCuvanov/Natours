@@ -54,7 +54,7 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline;
+    display: inline-block;
     background-image: -webkit-gradient(linear, left top, right top, from($color-primary-light), to($color-primary-dark));
     background-image: -webkit-linear-gradient(left, $color-primary-light, $color-primary-dark);
     background-image: -o-linear-gradient(left, $color-primary-light, $color-primary-dark);
@@ -72,6 +72,7 @@ body {
 
     @include respond($breakpoint-phone) {
         font-size: 2.5rem;
+        word-wrap: break-word;
     }
 
     &:hover {
