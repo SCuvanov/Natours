@@ -123,13 +123,66 @@
         rgba($color-white, .75) 50%,
         transparent 50%), url('../../resources/img/nat-10.jpg');
     background-size: cover;
-    height: 50rem;
     border-radius: 0.5rem;
     -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 
+    @include respond($breakpoint-tablet-landscape) {
+
+        background-image: -webkit-linear-gradient(345deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 70%,
+            transparent 70%), url('../../resources/img/nat-10.jpg');
+        background-image: -o-linear-gradient(345deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 70%,
+            transparent 70%), url('../../resources/img/nat-10.jpg');
+        background-image: linear-gradient(105deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 70%,
+            transparent 70%), url('../../resources/img/nat-10.jpg');
+    }
+
+    @include respond($breakpoint-tablet-portrait) {
+        background-image: -webkit-linear-gradient(345deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 60%,
+            transparent 60%), url('../../resources/img/nat-10.jpg');
+        background-image: -o-linear-gradient(345deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 60%,
+            transparent 60%), url('../../resources/img/nat-10.jpg');
+        background-image: linear-gradient(105deg,
+            rgba($color-white, .75) 0%,
+            rgba($color-white, .75) 60%,
+            transparent 60%), url('../../resources/img/nat-10.jpg');
+    }
+
+    @include respond($breakpoint-phone) {
+
+        background-image: -webkit-linear-gradient(rgba($color-white, .75), rgba($color-white, .75)), url('../../resources/img/nat-10.jpg');
+        background-image: -o-linear-gradient(rgba($color-white, .75), rgba($color-white, .75)), url('../../resources/img/nat-10.jpg');
+        background-image: linear-gradient(rgba($color-white, .75), rgba($color-white, .75)), url('../../resources/img/nat-10.jpg');
+
+    }
+
     &__form {
         width: 50%;
         padding: 5rem;
+
+        @include respond($breakpoint-tablet-landscape) {
+            width: 70%;
+        }
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 65%;
+            padding: 3.5rem;
+        }
+
+        @include respond($breakpoint-phone) {
+            width: 100%;
+            padding: 3.5rem;
+        }
+
     }
 }

@@ -19,6 +19,10 @@
         -o-transition: all .3s;
         transition: all .3s;
 
+        @include respond($breakpoint-phone) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             -webkit-box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .15);
@@ -57,6 +61,28 @@
     &__radio-group {
         width: 50%;
         float: left;
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 50%;
+            float: none;
+        }
+
+        @include respond($breakpoint-phone) {
+            width: 50%;
+            float: none;
+        }
+    }
+
+    &__radio-group:not(:last-child) {
+        @include respond($breakpoint-tablet-portrait) {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__radio-group:last-child {
+        @include respond($breakpoint-tablet-portrait) {
+            margin-bottom: -2rem;
+        }
     }
 
     &__radio-label {
@@ -75,6 +101,7 @@
         position: absolute;
         left: 0;
         top: -0.5rem;
+
 
         &::after {
             @include absCenter;

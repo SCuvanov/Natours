@@ -186,11 +186,13 @@
 
     @include respond($breakpoint-tablet-portrait) {
         height: auto;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .15);
 
         &__side {
             height: auto;
             position: relative;
             width: 100%;
+            box-shadow: none;
 
             &--front {
                 border-radius: .5rem .5rem 0 0;
@@ -218,6 +220,10 @@
         &:hover &__side--back {
             -webkit-transform: rotateY(0) scale(1);
             transform: rotateY(0) scale(1);
+        }
+
+        &__details {
+            padding: 1rem 3rem 2rem 3rem;
         }
 
         &__cta {
