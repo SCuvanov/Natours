@@ -950,6 +950,11 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        position: relative;
+        display: block;
+        width: 75%; } }
   .header__logo {
     height: 3.5rem;
     width: auto; }
@@ -961,6 +966,9 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .header__heading-box {
+        position: relative; } }
 
 .row {
   max-width: 114rem;
