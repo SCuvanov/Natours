@@ -749,7 +749,8 @@ body {
     @media (max-width: 56.25em) {
       .popup__right {
         display: inline-block;
-        width: 100%; } }
+        width: 100%;
+        padding: 3rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%;
@@ -771,7 +772,8 @@ body {
     hyphens: auto; }
     @media (max-width: 56.25em) {
       .popup__text {
-        column-count: 1; } }
+        column-count: 1;
+        font-size: 1.3rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }

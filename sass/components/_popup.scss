@@ -54,6 +54,7 @@
         @include respond($breakpoint-tablet-portrait) {
             display: inline-block;
             width: 100%;
+            padding: 3rem 3rem;
         }
     }
 
@@ -85,6 +86,7 @@
 
         @include respond($breakpoint-tablet-portrait) {
             column-count: 1;
+            font-size: 1.3rem;
         }
 
     }
