@@ -1,21 +1,28 @@
 .header {
     height: 95vh;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/hero.jpg');
-    background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
-    background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/hero-small.jpg');
+    background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero-small.jpg');
+    background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero-small.jpg');
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero-small.jpg');
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
     position: relative;
 
+    @media (min-resolution: 192dpi) and (min-width:37.5em), (min-width:125em){
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/hero.jpg');
+        background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+        background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+    }
+
     @include respond($breakpoint-tablet-portrait) {
         height: 75vh;
     }
 
     @include respond($breakpoint-phone) {
-        height: 65vh;
+        height: 75vh;
     }
 
     &__logo-box {
@@ -60,7 +67,7 @@
             -webkit-transform: translate(0);
             -ms-transform: translate(0);
             transform: translate(0);
-            
+
             padding: 7.5rem 5rem 0 5rem;
         }
 

@@ -30,11 +30,19 @@
         -webkit-transition: all .5s .2s;
         -o-transition: all .5s .2s;
         transition: all .5s .2s;
+
+        @include respond($breakpoint-tablet-portrait) {
+            width: 87.5%;
+        }
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond($breakpoint-tablet-portrait) {
+            display: none;
+        }
     }
 
     &__right {
@@ -42,6 +50,11 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond($breakpoint-tablet-portrait) {
+            display: inline-block;
+            width: 100%;
+        }
     }
 
     &__img {
@@ -68,6 +81,12 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+
+        @include respond($breakpoint-tablet-portrait) {
+            column-count: 1;
+        }
+
     }
 
     //Open states
