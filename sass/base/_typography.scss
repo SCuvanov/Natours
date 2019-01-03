@@ -76,9 +76,9 @@ body {
     }
 
     &:hover {
-        -webkit-transform: skewY(20deg);
-        -ms-transform: skewY(20deg);
-        transform: skewY(20deg);
+        -webkit-transform: skewY(3.5deg);
+        -ms-transform: skewY(3.5deg);
+        transform: skewY(3.5deg);
         text-shadow: .5rem .5rem 2rem rgba($color-black, .2);
     }
 }

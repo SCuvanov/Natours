@@ -162,9 +162,9 @@ body {
       font-size: 2.5rem;
       word-wrap: break-word; } }
   .heading-secondary:hover {
-    -webkit-transform: skewY(20deg);
-    -ms-transform: skewY(20deg);
-    transform: skewY(20deg);
+    -webkit-transform: skewY(3.5deg);
+    -ms-transform: skewY(3.5deg);
+    transform: skewY(3.5deg);
     text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
@@ -710,6 +710,11 @@ body {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -736,14 +741,15 @@ body {
       .popup__content {
         width: 87.5%; } }
   .popup__left {
-    width: 33.333333%;
-    display: table-cell; }
+    width: 100%;
+    display: block;
+    margin-bottom: 19.5rem; }
     @media (max-width: 56.25em) {
       .popup__left {
         display: none; } }
   .popup__right {
-    width: 66.6666667%;
-    display: table-cell;
+    width: 100%;
+    display: block;
     vertical-align: middle;
     padding: 3rem 5rem; }
     @media (max-width: 56.25em) {
@@ -753,8 +759,10 @@ body {
         padding: 3rem 3rem; } }
   .popup__img {
     display: block;
-    width: 100%;
-    background-size: cover; }
+    width: 50%;
+    height: 20rem;
+    float: left;
+    object-fit: cover; }
   .popup__text {
     font-size: 1.5rem;
     margin-bottom: 4rem;
@@ -783,7 +791,7 @@ body {
     -ms-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
-    color: #777;
+    color: #FFF;
     position: absolute;
     top: 2.5rem;
     right: 2.5rem;
@@ -794,6 +802,9 @@ body {
     -o-transition: all .2s;
     transition: all .2s;
     line-height: 1; }
+    @media (max-width: 56.25em) {
+      .popup__close:link, .popup__close:visited {
+        color: #777; } }
   .popup__close:hover {
     color: #55c57a; }
 
@@ -956,7 +967,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
   position: relative; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
       background-image: -webkit-linear-gradient(left top, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");

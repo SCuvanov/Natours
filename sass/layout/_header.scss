@@ -10,7 +10,8 @@
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
     position: relative;
 
-    @media (min-resolution: 192dpi) and (min-width:37.5em), (min-width:125em){
+    @media (min-resolution: 192dpi) and (min-width:37.5em),    
+           (-webkit-min-device-pixel-ratio: 2) and (min-width:37.5em), (min-width:125em){
         background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url('../img/hero.jpg');
         background-image: -webkit-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
         background-image: -o-linear-gradient(left top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
