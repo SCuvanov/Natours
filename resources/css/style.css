@@ -832,16 +832,21 @@ body {
       -ms-transform: skewX(0);
       transform: skewX(0); } }
   .story__shape {
+    position: relative;
     width: 15rem;
     height: 15rem;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     -webkit-transform: translateX(-3rem) skewX(12deg);
     -ms-transform: translateX(-3rem) skewX(12deg);
     transform: translateX(-3rem) skewX(12deg);
-    position: relative; }
+    border-radius: 50%; }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .story__shape {
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 37.5em) {
       .story__shape {
         width: 10rem;
@@ -957,16 +962,18 @@ body {
         float: none; } }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero-small.jpg");
   background-image: -webkit-linear-gradient(left top, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-image: -o-linear-gradient(left top, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-image: linear-gradient(to right bottom, rgba(30, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
   position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%); } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
